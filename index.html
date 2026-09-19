@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mi App de Prueba</title>
+<style>
+body{font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#f4f7fb;color:#172033}
+.card{width:min(520px,90%);padding:32px;border-radius:20px;background:white;box-shadow:0 12px 35px #0001;text-align:center}
+button{border:0;border-radius:12px;padding:12px 20px;background:#2563eb;color:white;font-size:16px;cursor:pointer}
+#contador{font-size:48px;font-weight:700;margin:20px}
+</style>
+</head>
+<body>
+<main class="card">
+<h1>🚀 Mi App de Prueba</h1>
+<p>Una aplicación web sencilla publicada desde GitHub.</p>
+<div id="contador">0</div>
+<button id="btn">Haz clic</button>
+</main>
+<script>
+let n=0;
+document.querySelector('#btn').addEventListener('click',()=>{n++;document.querySelector('#contador').textContent=n});
+</script>
+</body>
+</html>
